@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#15191E",
+        primary: "#37B149",
         primaryHover: "#2066fc",
         secondary: "#BCEBCB",
         danger: "#FE6F7B",
@@ -33,9 +33,9 @@ const config: Config = {
   plugins: [],
 
   //default tailwindcss desable
-  corePlugins: {
-    preflight: false,
-  },
+  // corePlugins: {
+  //   preflight: false,
+  // },
   important: true,
 };
 export default config;
