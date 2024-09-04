@@ -1,5 +1,10 @@
 import { USER_ROLE } from "@/constants/role";
 
+export type IProductProps = {
+  name: string;
+  image: string;
+  href: string;
+};
 
 
 
