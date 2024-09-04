@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useEffect, useState } from "react";
 import { ArrowUpOutlined } from "@ant-design/icons";
 
@@ -71,8 +71,9 @@ const HomeBanner = () => {
             </h4>
 
             <Link className="" href="/category">
-              <Button text="Shopping Now" className="w-36 mt-5 mb-5  rounded-full h-9" />
-                
+              <Button className="w-36 mt-5 mb-5  rounded-full h-9">
+                Shopping Now
+              </Button>
             </Link>
           </div>
 
@@ -82,9 +83,12 @@ const HomeBanner = () => {
         {/* home banner content end */}
 
         <div className=" mt-10 mb-10">
-          <Image width={600} height={500}
+          <Image
+            width={600}
+            height={500}
             className="w-[90%] mx-auto lg:w-[600px]  ml-3 rounded-xl h-[300px] lg:h-[400px] z-20"
-            src={images[currentImageIndex].img} alt="Home Banner"
+            src={images[currentImageIndex].img}
+            alt="Home Banner"
           />
         </div>
 
@@ -95,12 +99,13 @@ const HomeBanner = () => {
         >
           
         </Button> */}
+
         <Button
-        text={<ArrowUpOutlined />}
           onClick={handleScrollToTop}
           className="animated z-10 fixed right-5 bottom-16 transition rounded-full duration-200 text-[20px] flex justify-center items-center animate-bounce w-8 h-8 font-bold bg-primary "
-        />
-          
+        >
+          <ArrowUpOutlined />
+        </Button>
       </div>
     </div>
   );
