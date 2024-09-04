@@ -1,11 +1,11 @@
-import Button from "@/app/components/ui/button/Button";
+import HomeBanner from "@/app/components/main/Home/HomeBanner";
+
 
 
 const HomePage = () => {
   return (
     <div>
-      <Button className="m-5" text="Download" outlet={true}/>
-      <Button className="" text="Download"/>
+     <HomeBanner />
     </div>
   );
 };
